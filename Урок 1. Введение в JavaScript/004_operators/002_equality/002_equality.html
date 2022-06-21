@@ -1,0 +1,42 @@
+﻿<!--
+    Оператор равенства "==" предназначен для сравнения значений двух переменных, при этом необходимо помнить о следующих правилах:    
+         1. если одно значение null а другое undefined - значения равны.
+         2. если одно значение число, а второе строка, то строка преобразуется в число и произведется сравнение.
+         3. если одно значение true оно преобразуется в 1, если значение false оно преобразуется в 0.
+-->
+
+<html>
+
+<head>
+    <title>Оператор равенства</title>
+    <script type="text/javascript">
+        var a = 1;          // простое число
+        var b = "1";        // число как строка
+        var c = "world";    // строка            
+        var d = 'world';    // строка
+        var e = true;       // логическое "истина"
+
+        var result;
+
+        result = a == b; // true
+        console.log("a равно b: " + result);
+
+        result = a == e; // true
+        console.log("a равно e: " + result);
+
+        result = b == e; // true
+        console.log("b равно e: " + result);
+
+        result = c == d; // true
+        console.log("c равно d: " + result);
+    </script>
+</head>
+
+<body>
+
+    <!-- https://jsfiddle.net/c301yktu/13/ -->
+    <!-- Разметка страници -->
+
+</body>
+
+</html>

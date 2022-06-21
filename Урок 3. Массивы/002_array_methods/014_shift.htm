@@ -1,0 +1,30 @@
+﻿<!--
+    Метод shift() удаляет первый элемент из массива и возвращает удаленное значение.
+-->
+
+<html>
+<head>
+    <title>Метод shift()</title>
+
+    <script type="text/javascript">
+        var cars = ["Subaru", "Volvo", "BMW", "Ford"];
+
+        console.log("Исходный массив: " + cars + " первый элемент до удаления - " + cars[0]);
+        var deleteValue = cars.shift();
+
+        console.log("Массив после удаления: " + cars + " первый элемент до удаления - " + cars[0]);
+        console.log("###################");
+        console.log("Удаленное значение: " + deleteValue);
+
+        //cars.push('vlad');
+
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

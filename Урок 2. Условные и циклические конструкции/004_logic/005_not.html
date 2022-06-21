@@ -1,0 +1,39 @@
+﻿<!--
+    Логическое НЕ приводит аргумент к логическому типу и возвращает противоположное значение.
+    Двойное НЕ используется для преобразования значений к логическому типу.
+
+    Таблица истинности логического НЕ (!):
+            !true == false
+            !false == true 
+
+    !! - переводит значение в булеан
+-->
+
+<html>
+<head>
+    <title>Логические операторы</title>
+    <script type="text/javascript">
+
+        var a = 1;
+        var b = 1;
+
+        var res = !a;
+        console.log("!true = " + res);  // false
+        console.log("*****");
+        
+        console.log(!!5);               // true
+        console.log(!!"String");        // true
+        console.log(!!null);            // false
+        console.log(!!b);               // true
+        
+        // var test = prompt('please enter some value');
+
+        // if (!test) {
+        //     console.log('пользователь ничего не ввел или нажал отмена');
+        // }
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

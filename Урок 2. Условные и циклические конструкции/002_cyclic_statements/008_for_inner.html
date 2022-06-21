@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <title>Цикл for вложенный в цикл for</title>
+    <script type="text/javascript">
+        
+        for (var i = 0; i < 4; i++) {
+            // i: 2; j: 0
+            // i: 2; j: 1
+            // i: 2; j: 2
+            // i: 2: j: 3
+            // ....
+            // i: 0; j: 9
+
+            // continue;
+
+            // Выводим одну строку из 5 звездочек.
+            for (var j = 0; j < 10; j++) {
+                document.write("* ");
+               
+                // break;
+                // continue;
+            }
+
+            // break;
+
+            document.write("i: " + i);
+
+            // Переход на новую строку.
+            document.write("<br/>");
+        }
+
+        document.write("Exit<br/>");
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

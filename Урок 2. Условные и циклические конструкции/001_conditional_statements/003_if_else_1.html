@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <title>Условная конструкция if else с дополнительными условиями</title>
+    <!-- Разметка страници -->
+    <script type="text/javascript">
+        var laptop = prompt("Какая модель ноутбука Вас интересует?"); // "sony"
+
+        // laptop = laptop.toLowerCase();
+        if (laptop == "asus") {
+            console.log("ноутбук " + laptop + " есть в наличии");
+        } else if (laptop == "dell") {      // Добавление дополнительного условия в случае невыполнения первого
+            console.log("ноутбук " + laptop + " есть в наличии");
+        } else if (laptop == "sony") {      
+            console.log("ноутбук " + laptop + " есть в наличии");
+        } else if (laptop == "lenovo") {    
+            console.log("ноутбук " + laptop + " есть в наличии");
+        } else {
+            console.log("указанный Вами товар не найден.");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

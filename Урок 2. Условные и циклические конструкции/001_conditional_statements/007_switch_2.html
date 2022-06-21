@@ -1,0 +1,40 @@
+﻿<!--
+    Оператор многозначного выбора - switch-case (переключатель). Проваливание.
+-->
+
+<html>
+
+<head>
+    <title>Проваливание</title>
+    <script type="text/javascript">
+        var day = +prompt("Введите номер дня недели:"); // 3
+
+        switch (day) {
+            case day < 3:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log("Рабочий день недели.");
+                if (day < 3) {
+                    console.log("OK");
+                }
+
+                break;
+
+            case 6:
+            case 7:
+                console.log("Выходной.");
+                break;
+
+            default:
+                console.log("Вы ввели несуществующий номер дня недели.");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Разметка страници -->
+</body>
+
+</html>

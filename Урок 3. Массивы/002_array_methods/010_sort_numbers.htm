@@ -1,0 +1,29 @@
+﻿<!--
+    Для сортировки массива в каком-либо ином порядке, методу sort() можно передать свой алгоритм сортировки в виде функции сравнения:
+    
+    array.sort(function(a, b) { ... return number; });
+    
+    где a и b — два соседних элемента массива;
+    number — число, указывающее методу, как должны располагаться элементы a и b:
+        • если number > 0 — элементы меняются местами;
+        • если number <= 0 — элементы не меняются местами;
+-->
+
+<html>
+<head>
+    <title>Метод sort()</title>
+
+    <script type="text/javascript">
+        var numbers = [3, 7, 14, 2, 9, 95, 5];
+
+        console.log("array before sorting: " + numbers + " and first item is: " + numbers[0]);
+        console.log("#############");
+
+        numbers.sort(function (a, b) { return a - b; });
+        console.log("array after sorting: " + numbers + " and first item is: " + numbers[0]);
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

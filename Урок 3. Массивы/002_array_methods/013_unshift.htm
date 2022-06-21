@@ -1,0 +1,29 @@
+﻿<!--
+    Метод unshift() - добавляет элементы в начало массива и возвращает его новую длину.
+-->
+
+<html>
+<head>
+    <title>Метод unshift()</title>
+
+    <script type="text/javascript">
+        var cars = ["Subaru", "Volvo", "BMW", "Ford"];
+        console.log("Исходный массив: " + cars);
+
+        console.log("**********************");
+
+        var newLength = cars.unshift("Audi");
+        console.log("Массив после добавления Audi: " + cars);
+        console.log("Размер нового массива: " + newLength + " и первый элемент - " + cars[0]);
+
+        console.log("**********************");
+
+        newLength = cars.unshift("Akura", "Jeep", "Nissan");
+        console.log("Массив после добавления Akura, Jeep, Nissan: " + cars);
+        console.log("Размер нового массива: " + newLength + " и первый элемент - " + cars[0]);
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

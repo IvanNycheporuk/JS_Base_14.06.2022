@@ -1,0 +1,33 @@
+﻿<!--
+    Метод Join() - объединяет все элементы массива в одну строку. 
+    Если метод принимает строковой аргумент, то аргумент станет разделителем для элементов массива.
+-->
+
+<html>
+<head>
+    <title>Метод Join()</title>
+
+    <script type="text/javascript">
+        var cars = ["Mercedes", "Audi", "BMW"];
+        document.write(cars);
+
+        console.log("Before: [" + cars + "]");
+        var changedArray = cars.join(", ");
+        document.write("<br/><br />");
+
+        // document.write(changedArray);
+        console.log("After: [" + changedArray + "]");
+        changedArray = cars.join("<br />");
+
+        document.write("<br/><br />");
+        document.write(changedArray);
+        
+        var b = "12 3asd 123 asdasd"
+        var a = b.split(" ");
+        console.log(a);
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

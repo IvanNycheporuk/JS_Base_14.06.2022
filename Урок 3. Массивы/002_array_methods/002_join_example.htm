@@ -1,0 +1,33 @@
+﻿<!--
+    Метод Join() - переводит массив в строку
+    Метод Split() - переводит строку в массив
+-->
+
+<html>
+<head>
+    <title>Метод Join()</title>
+
+    <script type="text/javascript">
+        var fruits = ["яблоко", "груша", "слива", "апельсин"];
+        console.log("before join");
+        console.log(fruits);
+       
+        var changedArray = fruits.join(" ");
+
+        console.log("after join")
+        console.log(changedArray);
+
+        var newArr = changedArray.split(" ");
+        console.log("after split")
+        console.log(newArr);
+
+        var test = '1-2-3-4';
+
+        var newTest = test.split('-');
+        console.log(newTest);
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

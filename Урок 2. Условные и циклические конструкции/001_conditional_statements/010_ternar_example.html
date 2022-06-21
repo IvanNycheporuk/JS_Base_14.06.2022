@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Тернарный оператор</title>
+    <meta charset="utf-8">
+    <!--
+        Используйте тернарный операторы, чтобы установить значение переменной или уменьшить код, если это необходимо. 
+        Используйте операторы if-else для всего остального. 
+    -->
+    <script type="text/javascript">
+
+        var quantity = prompt("Сколько штук покупаем?");//10
+        var price = 100;                                        // Цена за единицу товара.           
+        var discount = 0.75;                                    // Скидка на общую стоимость - 25%.
+
+        var cost = (quantity >= 10) ? quantity * price * discount : quantity * price; // Общая стоимость
+
+        // var cost;
+        // if (quantity >= 10) {
+        //     cost = quantity * price * discount;
+        // } else {
+        //     cost = quantity * price;
+        // }
+
+        console.log("Общая стоимость товара составляет: " + cost + " у.е.");
+
+        // var num = +prompt("Please enter size");
+
+        // if (num < 5) {
+        //     console.log("Tiny");
+        // } 
+        // if (num < 10) {
+        //     console.log("Small");
+        // } 
+        // if (num < 15) {
+        //     console.log("Medium");
+        // } 
+        // if (num < 20) {
+        //     console.log("Large");
+        // } 
+        // if (num >= 20) {
+        //     console.log("Huge");
+        // }
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

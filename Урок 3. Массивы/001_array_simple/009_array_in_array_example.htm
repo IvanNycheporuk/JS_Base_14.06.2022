@@ -1,0 +1,29 @@
+﻿<html>
+
+<head>
+    <title>Массив из массивов</title>
+
+    <script type="text/javascript">
+        var Ukraine = ["Киев", "Харьков", "Львов", "Днепропетровск"];
+        var Spain = ["Мадрид", "Барселона", "Валенсия", "Севилья"];
+        var Poland = ["Варшава", "Краков", "Гданьск"];
+
+        var countries = [Ukraine, Spain, Poland];
+        console.log(countries);
+
+        var city = countries[2][1];
+        console.log(city);
+
+        console.log("Выбранный город - " + countries[2][1]); // Какой город будет выведен в консоль? // 
+        console.log("Выбранный город - " + countries[0][3]); // Какой город будет выведен в консоль? // 
+        console.log("Выбранный город - " + countries[1][1]); // Какой город будет выведен в консоль? // 
+        console.log("Выбранный город - " + countries[2][3]); // Какой город будет выведен в консоль? // 
+
+    </script>
+</head>
+
+<body>
+    <!-- Разметка страници -->
+</body>
+
+</html>

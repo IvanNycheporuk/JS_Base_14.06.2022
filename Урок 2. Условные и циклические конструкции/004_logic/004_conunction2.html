@@ -1,0 +1,33 @@
+﻿<!--
+    Если левый аргумент — false, оператор И возвращает его и заканчивает вычисления. Иначе — вычисляет и возвращает правый аргумент.
+
+    Если значение опущено или равно 0, -0, null, false, NaN, undefined или пустой строке (""), объект имеет начальное значение, равное false
+-->
+
+<html>
+<head>
+    <title>Логические операторы</title>
+    <script type="text/javascript">
+        var a = true;
+        var b = false;
+        var c = 5;
+        var d = "str";
+        var e = null;
+        var f = "0";
+
+        console.log(a && b);  //  false 
+        console.log(c && d);  // true
+        console.log(e && c);  // false \ 5
+        console.log(f && c);  // "0"
+        console.log(b && f);  //   '0'
+        console.log(e && b);  // false
+
+        if (a && b) {
+            //...
+        }
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>
