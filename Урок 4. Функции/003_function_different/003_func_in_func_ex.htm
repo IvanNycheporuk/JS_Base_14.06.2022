@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+    <title>Вложенные функции пример</title>
+    <script type="text/javascript">
+        function hypotenuse(a, b) {
+            function pow(x) {
+                return x * x;
+            };
+
+            var a2 = pow(a);
+            var b2 = pow(b);
+            var c = a2 + b2;
+            var c2 = Math.sqrt(c);
+            // return c2;
+
+            return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        };
+
+        console.log("Гипотенуза треугольника с катетами 3 и 4 равна: " + hypotenuse(3, 4));
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

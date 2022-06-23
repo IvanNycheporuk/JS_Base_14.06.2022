@@ -1,0 +1,25 @@
+﻿<!--
+    Область видимости не ограничивается телом условной или циклической конструкции.
+-->
+
+<html>
+<head>
+    <title>Область видимости внутри конструкций</title>
+    <script type="text/javascript">
+        // var counter;
+
+        for (let counter = 0; counter < 3; counter++) {
+            console.log("A: " + counter);
+        }
+        
+        console.log("*********************************");
+
+        // counter - счетчик итераций цикла доступна вне тела цикла - for.
+        // Если сделать let counter в цикле, то тут будет ошибка
+        console.log(counter);
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+</html>

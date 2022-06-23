@@ -1,0 +1,39 @@
+﻿<html>
+
+<head>
+    <title>Массив аргументов arguments</title>
+    <script type="text/javascript">
+        function get_user_info(name, password, age) {
+            if (name == undefined || password == undefined) {
+                console.log("Error");
+                return;
+            } 
+
+            // if (name == undefined) {
+            //     // error
+            // } else if (password == undefined) {
+            //     // error
+            // }
+
+            // Проверка, правильное ли количество аргументов передано.
+            if (arguments.length != 3) {
+                document.write("<p><b style='color:red;'>ОШИБКА:</b> <em>Требуется три аргумента при вызове. Функция вызвана с " + arguments.length + " параметрами!</em>");
+            } else {
+                document.write("<p><span style='color:green;'> Правильный вызов функции.</span> Аргументы: ");
+
+                for (var i = 0; i < arguments.length; i++) {
+                    document.write(arguments[i] + ", ");
+                }
+            }
+        }
+
+        get_user_info("John", "21sd231", 15, "New York");   // Более трех аргументов - ошибка!
+        get_user_info("John", "21sd231", 15);
+        get_user_info("John");                    // Менее трех аргументов - ошибка!
+    </script>
+</head>
+<body>
+    <!-- Разметка страници -->
+</body>
+
+</html>

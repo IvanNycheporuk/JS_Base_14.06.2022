@@ -1,0 +1,42 @@
+<!-- 
+    Существует ещё более простой и краткий синтаксис для создания функций, который часто лучше, чем синтаксис Function Expression.
+    Он называется «функции-стрелки» или «стрелочные функции» (arrow functions), т.к. выглядит следующим образом:
+
+    let func = (arg1, arg2, ...argN) => expression
+
+    Это более короткий вариант такой записи:
+    let func = function(arg1, arg2, ...argN) {
+        return expression;
+    };
+ -->
+<html>
+
+<head>
+    <title>Стрелочные функции</title>
+    <script type="text/javascript">
+
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+
+        // // Более короткая форма для:
+        // let sum = function (a, b) {
+        //     return a + b;
+        // };
+
+        // let sum = (a, b) => a + b;
+
+        let sum = (a, b) => {  
+            let result = a + b;
+            return result; // при фигурных скобках для возврата значения нужно явно вызвать return
+        };
+
+        console.log(sum(10, 20));
+    </script>
+</head>
+
+<body>
+    <!-- Разметка страници -->
+</body>
+
+</html>

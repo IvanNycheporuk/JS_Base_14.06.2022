@@ -1,0 +1,45 @@
+﻿<!--
+    arguments - Переменная, доступная внутри функции и содержащая ее аргументы. У нее есть свойство length, в котором хранится количество аргументов, переданых функции.
+-->
+
+<html>
+
+<head>
+    <title>Массив аргументов arguments</title>
+    <script type="text/javascript">
+        function max() {
+            // var maxValue = Number.NEGATIVE_INFINITY;
+            // var maxValue = 0;
+            // console.log("Number.NEGATIVE_INFINITY = " + maxValue);
+            console.log(arguments);
+
+            var maxValue = arguments[0];
+            for (var i = 0; i < arguments.length; i++) {
+                // [-33, 33, 777, -650, 943, -22]
+
+                // i: 0 => -33 > -1000
+                // i: 1 => 33 > -33
+                // i: 2 => 777 > 33
+                // i: 3 => -650 > 777
+                // i: 4 => 943 > 777
+                // i: 5 => -22 > 943
+                if (arguments[i] > maxValue) {
+                    maxValue = arguments[i]; // -33 => 33 => 777 => 943 => ...
+                }
+            }
+
+            return maxValue;
+        }
+
+        var result = max(-33, 33, 777, -650, 943, -22, -2200, -1000, 6); // 943
+
+        var result = max(-100, -200, -30, -1);
+        console.log("Максимальное значение одного из аргументов функции = " + result);
+    </script>
+</head>
+
+<body>
+    <!-- Разметка страници -->
+</body>
+
+</html>
