@@ -1,0 +1,27 @@
+﻿<!-- 
+    document.getElementById - поиск елемента на странице по id
+    
+    Если вдруг на странице оказалось две записи с одинаковым id (чего быть не должно) - то вернет все равно первый попавшийся в DOM дереве
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Свойства объекта Document</title>
+</head>
+
+<body>
+    <h1 id="myHeader" onclick="getValue()">Click me!</h1>
+
+    <script>
+        function getValue() {
+            var test = document.getElementById("myHeader");
+            console.log(test);
+            // test.style.color = '#f00';
+            test.style = "font-size: 44px; color: #f00";
+        }
+    </script>
+</body>
+
+</html>

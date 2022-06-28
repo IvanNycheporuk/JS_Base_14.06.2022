@@ -1,0 +1,57 @@
+<!-- 
+    Оператор объединения с null представляет собой два вопросительных знака ??.
+
+    Результат выражения a ?? b будет следующим:
+    a, если значение a определено,
+    b, если значение a не определено.
+    То есть оператор ?? возвращает первый аргумент, если он не null/undefined, иначе второй.
+
+    Оператор объединения с null не является чем-то принципиально новым. Это всего лишь удобный синтаксис, как из двух значений получить одно «определённое».
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Example 1
+        let user1 = "Иван";
+        let user2 = undefined;
+
+        console.log(user1 ?? "Аноним"); // Иван
+        console.log(user2 ?? "Аноним"); // Аноним
+
+        // Example 2
+        let firstName = null;
+        let lastName = null;
+        let nickName = "Суперкодер";
+
+        // показывает первое определённое значение:
+        console.log(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
+
+        // Example 3
+        var human = {
+            firstName: "David",
+            secondName: "Flanagan",
+            age: 30
+        };
+        console.log(human.age ?? "Мы не знаем сколько ему лет");
+        
+        delete human.age;
+        console.log(human.age ?? "Мы не знаем сколько ему лет");
+
+        // Example 4
+        let height = 0;
+
+        console.log(height || 100); // 100, потому что height == 0 == false
+        console.log(height ?? 100); // 0, потому что height != null or undefined
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta>
+    <title>Работа с узлами DOM - методы и свойства -2</title>
+    <!-- 
+    createElement - создания элементов
+-->
+
+<body>
+    <button onclick="addTag()">Click me</button>
+    <script>
+        function addTag() {
+            var h1 = document.createElement('h1');
+            h1.innerHTML = 'Hello world! H1';
+
+            var h6 = document.createElement('h6');
+            h6.innerHTML = 'Hello world! H6';
+            
+            document.body.appendChild(h1);
+            document.body.appendChild(h6);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS generator</title>
+</head>
+<body>
+    <div>
+        <p>
+            Top left corner
+            <input type="range" id="tlc" value="0" min="0" max="100" oninput="onRangeChange()">
+            <!-- id="ttl" ttl - text top left -->
+            <span id="ttl">0</span>
+        </p>
+        <p>
+            Top right corner
+            <input type="range" id="trc" value="0" min="0" max="100" oninput="onRangeChange()">
+            <span id="ttr">0</span>
+        </p>
+        <p>
+            Bottom left corner
+            <input type="range" id="blc" value="0" min="0" max="100" oninput="onRangeChange()">
+            <span id="tbl">0</span>
+        </p>
+        <p>
+            Bottom right corner
+            <input type="range" id="brc" value="0" min="0" max="100" oninput="onRangeChange()">
+            <span id="tbr">0</span>
+        </p>                                    
+    </div>
+
+    <div id="block"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

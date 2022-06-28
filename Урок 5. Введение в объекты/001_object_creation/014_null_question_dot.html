@@ -1,0 +1,26 @@
+<!-- 
+    Опциональная цепочка ?. — это безопасный способ доступа к свойствам вложенных объектов, даже если какое-либо из промежуточных свойств не существует.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let user = {}; // пользователь без свойства address
+        //console.log(user.address.street); // ошибка!
+        console.log(user && user.address && user.address.street); // undefined (без ошибки)
+        console.log(user?.address?.street); // undefined (без ошибки)
+
+        // Произойдёт ошибка, если querySelector(...) равен null.
+        let html = document?.querySelector('.my-element')?.innerHTML;
+    </script>
+</body>
+
+</html>

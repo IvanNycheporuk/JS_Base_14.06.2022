@@ -15,23 +15,33 @@
     <title>Стрелочные функции</title>
     <script type="text/javascript">
 
+        // func declaration
         // function sum(a, b) {
         //     return a + b;
         // }
 
-        // // Более короткая форма для:
+        // // Более короткая форма для: func expression
         // let sum = function (a, b) {
         //     return a + b;
         // };
 
-        // let sum = (a, b) => a + b;
+        // arrow func
+        // const sum = (a, b) => a + b;
 
-        let sum = (a, b) => {  
-            let result = a + b;
-            return result; // при фигурных скобках для возврата значения нужно явно вызвать return
-        };
+        // let sum = (a, b) => {  
+        //     let result = a + b;
+        //     return result; // при фигурных скобках для возврата значения нужно явно вызвать return
+        // };
 
-        console.log(sum(10, 20));
+        // console.log(sum(10, 20));
+
+        const pow = x => x * x;
+
+        let test = pow(2);
+
+        const showMessage = _ => {
+            alert('some test');
+        }
     </script>
 </head>
 
