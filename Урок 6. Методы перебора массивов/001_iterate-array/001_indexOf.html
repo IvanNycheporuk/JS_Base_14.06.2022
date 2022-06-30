@@ -1,0 +1,25 @@
+<!-- 
+    arr.indexOf(item, from) ищет item, начиная с индекса from, и возвращает индекс, на котором был найден искомый элемент, в противном случае -1.
+    Обратите внимание, что метод используют строгое сравнение ===. Таким образом, если мы ищем false, он находит именно false, а не ноль.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var arr = [1, -1, "2", -2, 2, false, -10, "2", 20, "test"];
+
+        console.log(arr.indexOf(true)); // -1
+        console.log(arr.indexOf(0));    // -1
+        console.log(arr.indexOf(2));    // 4
+        console.log(arr.indexOf("2"));  // 2
+    </script>
+</body>
+
+</html>

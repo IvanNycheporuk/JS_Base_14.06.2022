@@ -1,0 +1,51 @@
+<!-- 
+	Метод «arr.map(callback[, thisArg])» используется для трансформации массива.
+	Он создаёт новый массив, который будет состоять из результатов вызова callback(item, i, arr) для каждого элемента arr.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>map</title>
+</head>
+
+<body>
+	<script>
+		// var names = ['HTML', 'CSS', 'JavaScript'];
+
+		// var nameLengths = names.map(function(name) {
+		// 	return name.length;
+		// });
+
+		// console.log(nameLengths); // 4,3,10
+
+		var animals = [
+			{ name: 'Fluffykins', species: 'rabbit' },
+			{ name: 'Caro', species: 'dog' },
+			{ name: 'Hamilton', species: 'dog' },
+			{ name: 'Harold', species: 'fish' },
+			{ name: 'Ursula', species: 'cat' },
+			{ name: 'Jimmy', species: 'fish' }
+		];
+
+		// using for loop
+		let names = [];
+		for (var i = 0; i < animals.length; i++) {
+			names.push(animals[i].name);
+		}
+
+		console.log(names);
+
+		// Using map
+		var names2 = animals.map(function (item) {
+			return item.name
+		});
+
+		console.log(names2);
+
+	</script>
+</body>
+
+</html>

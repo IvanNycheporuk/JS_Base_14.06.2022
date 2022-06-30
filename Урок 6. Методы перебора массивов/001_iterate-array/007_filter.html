@@ -1,0 +1,51 @@
+<!-- 
+	Метод «arr.filter(callback[, thisArg])» используется для фильтрации массива через функцию.
+	Он создаёт новый массив, в который войдут только те элементы arr, для которых вызов callback(item, i, arr) возвратит true.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>filter</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		let arr = [
+			{
+				name: "Tom",
+				age: 20
+			},
+			{
+				name: "Jim",
+				age: 42
+			},
+			{
+				name: "Kate",
+				age: 15
+			},
+			{
+				name: "Susan",
+				age: 31
+			},
+		];
+
+		let filtered = arr.filter(item => item.age >= 18);
+		console.log(filtered);
+
+		console.log('#############################');
+		// let filtered2 = arr.filter(function (item, index, array) {
+		// 	console.log(
+		// 		'name: ' + item.name, 
+		// 		'age: ' + item.age, 
+		// 		'index: ' + index);
+		// 	return item.age >= 18;
+		// });
+
+		// console.log(filtered2);
+	</script>
+</body>
+
+</html>

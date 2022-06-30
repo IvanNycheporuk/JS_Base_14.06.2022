@@ -1,0 +1,38 @@
+<!-- 
+	Метод «arr.every(callback[, thisArg])» возвращает true, если вызов callback вернёт true для каждого элемента arr.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>every</title>
+</head>
+
+<body>
+	<script>
+		let arr = [
+			{
+				name: "Tom",
+				age: 20
+			},
+			{
+				name: "Jim",
+				age: 42
+			},
+			{
+				name: "Kate",
+				age: 15
+			},
+			{
+				name: "Susan",
+				age: 31
+			},
+		];
+
+		console.log(arr.every(item => item.name.toLowerCase().includes('a')));
+	</script>
+</body>
+
+</html>

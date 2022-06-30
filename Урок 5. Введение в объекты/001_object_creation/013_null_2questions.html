@@ -21,21 +21,21 @@
 <body>
     <script>
         // Example 1
-        let user1 = "Иван";
-        let user2 = undefined;
+        // let user1 = "Иван";
+        // let user2 = undefined;
 
-        console.log(user1 ?? "Аноним"); // Иван
-        console.log(user2 ?? "Аноним"); // Аноним
+        // console.log(user1 ?? "Аноним"); // Иван
+        // console.log(user2 ?? "Аноним"); // Аноним
 
         // Example 2
-        let firstName = null;
-        let lastName = null;
-        let nickName = "Суперкодер";
+        // let firstName = null;
+        // let lastName = null;
+        // let nickName = "Суперкодер";
 
-        // показывает первое определённое значение:
-        console.log(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
+        // // показывает первое определённое значение:
+        // console.log(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
 
-        // Example 3
+        // // Example 3
         var human = {
             firstName: "David",
             secondName: "Flanagan",
@@ -46,11 +46,11 @@
         delete human.age;
         console.log(human.age ?? "Мы не знаем сколько ему лет");
 
-        // Example 4
-        let height = 0;
+        // // Example 4
+        // let height = 0;
 
-        console.log(height || 100); // 100, потому что height == 0 == false
-        console.log(height ?? 100); // 0, потому что height != null or undefined
+        // console.log(height || 100); // 100, потому что height == 0 == false
+        // console.log(height ?? 100); // 0, потому что height != null or undefined
     </script>
 </body>
 

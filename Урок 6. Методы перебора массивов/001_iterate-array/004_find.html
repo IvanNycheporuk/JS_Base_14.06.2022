@@ -1,0 +1,43 @@
+<!-- 
+    Представьте, что у нас есть массив объектов. Как нам найти объект с определённым условием?
+    Если функция возвращает true, поиск прерывается и возвращается item. Если ничего не найдено, возвращается undefined.
+    В реальной жизни массивы объектов – обычное дело, поэтому метод find крайне полезен.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let arr = [
+            {
+                name: "Tom",
+                age: 20
+            },
+            {
+                name: "Jim",
+                age: 42
+            },
+            {
+                name: "Kate",
+                age: 15
+            },
+            {
+                name: "Susan",
+                age: 31
+            }
+        ];
+
+        console.log(arr.find(item => item.age > 18));                   // Tom
+        console.log(arr.find(item => item.age > 20 && item.age < 50));  // Jim
+        console.log(arr.find(item => item.name.length > 5));            // undefined
+        console.log(arr.find(item => item.name.includes('u')));         // Susan
+    </script>
+</body>
+
+</html>

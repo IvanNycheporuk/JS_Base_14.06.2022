@@ -1,0 +1,25 @@
+<!-- 
+    arr.lastIndexOf(item, from) – то же самое, но ищет справа налево.
+    Обратите внимание, что метод используют строгое сравнение ===. Таким образом, если мы ищем false, он находит именно false, а не ноль.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lastIndexOf</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var arr = [1, -1, "2", -2, 2, false, "2", -10, true, 20, "test", 0]; // length: 12
+
+        console.log(arr.lastIndexOf(true)); // 8
+        console.log(arr.lastIndexOf(0));    // 11
+        console.log(arr.lastIndexOf(2));    // 4
+        console.log(arr.lastIndexOf("2"));  // 6
+    </script>
+</body>
+
+</html>

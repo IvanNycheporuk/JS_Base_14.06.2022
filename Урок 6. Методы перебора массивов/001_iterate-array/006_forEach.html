@@ -1,0 +1,40 @@
+<!-- 
+	Метод «arr.forEach(callback[, thisArg])» используется для перебора массива.
+
+	Он для каждого элемента массива вызывает функцию callback.
+	Этой функции он передаёт три параметра callback(item, i, arr):
+	item – очередной элемент массива.
+	i – его номер.
+	arr – массив, который перебирается 
+
+	Метод forEach ничего не возвращает, его используют только для перебора, как более «элегантный» вариант, чем обычный цикл for.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>forEach</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+
+
+		var arr = ["Яблоко", "Апельсин", "Груша"];
+
+		var showResults = function (item, index, arr) {
+			console.log(`item[${index}]: ${item} arr:${arr}`);
+			// console.log('item[' + index + ']: ' + item);
+		}
+
+		// arr.forEach(showResults);
+
+		for (var i = 0; i < arr.length; i++) {
+			console.log(`item[${i}]: ${arr[i]} arr:${arr}`);
+			// document.write(arr[i] + '<br>');
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!-- 
+    Метод arr.findIndex – по сути, то же самое, но возвращает индекс, на котором был найден элемент, а не сам элемент, и -1, если ничего не найдено.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let arr = [
+            {
+                name: "Tom",
+                age: 20
+            },
+            {
+                name: "Jim",
+                age: 42
+            },
+            {
+                name: "Kate",
+                age: 15
+            },
+            {
+                name: "Susan",
+                age: 31
+            },
+        ];
+
+        console.log(arr.findIndex(item => item.age > 20));             // 1
+        console.log(arr.findIndex(item => item.age <= 15));            // 2
+        console.log(arr.findIndex(item => item.name.length > 5));      // -1
+        console.log(arr.findIndex(item => item.name.includes('u')));   // 3
+    </script>
+</body>
+
+</html>

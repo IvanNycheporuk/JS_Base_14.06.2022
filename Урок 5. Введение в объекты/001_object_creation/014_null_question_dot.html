@@ -14,12 +14,14 @@
 <body>
     <script>
         let user = {}; // пользователь без свойства address
-        //console.log(user.address.street); // ошибка!
+        // console.log(user.address.street); // ошибка!
         console.log(user && user.address && user.address.street); // undefined (без ошибки)
         console.log(user?.address?.street); // undefined (без ошибки)
 
         // Произойдёт ошибка, если querySelector(...) равен null.
-        let html = document?.querySelector('.my-element')?.innerHTML;
+        let html = document.querySelector('.my-element').innerHTML;
+
+        console.log(html);
     </script>
 </body>
 
