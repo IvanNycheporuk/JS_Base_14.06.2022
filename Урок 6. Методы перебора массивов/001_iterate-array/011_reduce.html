@@ -29,27 +29,59 @@
 			{ amount: 325, name: 'fried cheese' }
 		];
 
-		// Using for
-		var totalAmount = 0;
-		for (var i = 0; i < orders.length; i++) {
-			totalAmount += orders[i].amount;
-		}
-		console.log(totalAmount);
+		// var totalPrice = orders.reduceRight((sum, item) => {
+		// 	console.log('sum: ' + sum);
+		// 	console.log('item:  ' + item.amount);
+		// 	return sum += item.amount;
+		// }, 0);
 
-		console.log('#############################');
+		var totalPrice = orders.reduce((sum, item) => sum += item.amount, 0);
 
-		// Using forEach
-		var totalAmount = 0;
-		orders.forEach((item) => {
-			totalAmount += item.amount
-		});
-		console.log(totalAmount);
 
-		// Using reduce
-		var totalAmount = orders.reduceRight(function (sum, item) {
-			return sum + item.amount;
-		}, 0);
-		console.log(totalAmount);
+		console.log('totalPrice: ' + totalPrice);
+		// console.log('#############################');
+
+		// var totalPriceForLoop = 0;
+		// for (var i = 0; i < orders.length; i++) {
+		// 	totalPriceForLoop += orders[i].amount;
+		// }
+
+		// console.log('totalPriceForLoop: ' + totalPriceForLoop);
+
+		// // using forEach
+
+		// var totalAmountForEach = 0;
+
+		// orders.forEach(o => {
+		// 	totalAmountForEach += o.amount;
+		// })
+
+		// console.log('totalAmountForEach: ' + totalAmountForEach);
+
+
+
+
+		// // Using for
+		// var totalAmount = 0;
+		// for (var i = 0; i < orders.length; i++) {
+		// 	totalAmount += orders[i].amount;
+		// }
+		// console.log(totalAmount);
+
+		// console.log('#############################');
+
+		// // Using forEach
+		// var totalAmount = 0;
+		// orders.forEach((item) => {
+		// 	totalAmount += item.amount
+		// });
+		// console.log(totalAmount);
+
+		// // Using reduce
+		// var totalAmount = orders.reduce(function (sum, item) {
+		// 	return sum + item.amount;
+		// }, 0);
+		// console.log(totalAmount);
 
 		// sum amount
 		//  0    250

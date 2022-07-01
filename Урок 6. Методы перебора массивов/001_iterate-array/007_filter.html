@@ -32,19 +32,19 @@
 			},
 		];
 
-		let filtered = arr.filter(item => item.age >= 18);
-		console.log(filtered);
+		// let filtered = arr.filter(item => item.age >= 18);
+		// console.log(filtered);
 
-		console.log('#############################');
-		// let filtered2 = arr.filter(function (item, index, array) {
-		// 	console.log(
-		// 		'name: ' + item.name, 
-		// 		'age: ' + item.age, 
-		// 		'index: ' + index);
-		// 	return item.age >= 18;
-		// });
+		// console.log('#############################');
+		let filtered2 = arr.filter(function (item, index, array) {
+			console.log(
+				'name: ' + item.name, 
+				'age: ' + item.age, 
+				'index: ' + index);
+			return item.age >= 18;
+		});
 
-		// console.log(filtered2);
+		console.log(filtered2);
 	</script>
 </body>
 
