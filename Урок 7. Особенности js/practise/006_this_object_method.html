@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Связывание метода объекта</title>
+</head>
+<body>
+	<!-- В этих примерах this объект person (объект person является «владельцем» функции): -->
+	<p id="demo"></p>
+
+	<script>
+		var person = {
+		    firstName  : "John",
+		    lastName   : "Doe",
+		    id         : 5566,
+		    myFunction : function() {
+		    	console.log(this);
+		       return this;
+		    }
+		};
+
+		console.log(person);
+
+		document.getElementById("demo").innerHTML = person.myFunction();
+	</script>
+</body>
+</html>

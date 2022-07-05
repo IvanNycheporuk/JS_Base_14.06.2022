@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Window History Back</title>
+
+	<!-- Объект window.history содержит историю браузеров. -->
+</head>
+<body>
+	<!-- Метод history.back () загружает предыдущий URL-адрес в список истории. Это то же самое, что нажать кнопку «Назад» в браузере. -->
+
+	<input type="button" value="Back" onclick="goBack()">
+
+	<script>
+		function goBack() {
+		    window.history.back()
+		}
+	</script>
+</body>
+</html>

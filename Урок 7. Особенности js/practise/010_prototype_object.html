@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Прототипное наследование</title>
+</head>
+<body>
+	<h2>JavaScript Objects</h2>
+
+	<p id="demo"></p>
+
+	<script>
+		function Person(first, last, age, eye) {
+		    this.firstName = first;
+		    this.lastName = last;
+		    this.age = age;
+		    this.eyeColor = eye;
+			this.show = function(){
+				console.log(this.firstName)
+			}
+		}
+		// Свойство prototype JavaScript позволяет добавлять новые свойства к конструкторам объектов:
+
+		Person.prototype.nationality = 'asdasdasdasdasd';
+
+		// var test 
+
+		var myFather = new Person("John", "Doe", 50, "blue");
+		//myFather.nationality = "English";
+
+		// а также методы 
+		Person.prototype.name = function() {
+    		return this.firstName + " " + this.lastName;
+		};
+
+		document.getElementById("demo").innerHTML = "My father is " + myFather.nationality + " and his fullname is: " + myFather.name();		
+	</script>
+
+	<!-- Только модифицируйте свои собственные прототипы. Никогда не изменяйте прототипы стандартных объектов JavaScript. -->
+</body>
+</html>

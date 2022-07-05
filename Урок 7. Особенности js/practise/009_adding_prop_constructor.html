@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Object Constructors</title>
+</head>
+<body>
+	
+	<p id="demo"></p>
+
+	<script>
+		// Чтобы добавить новое свойство в конструктор, вы должны добавить его в функцию конструктора:
+
+		function Person(first, last, age, eye) {
+		    this.firstName = first;
+		    this.lastName = last;
+		    this.age = age;
+		    this.eyeColor = eye;
+		    this.nationality = "English";
+		}	
+		
+		// Person.prototype.nationality = "English";
+
+		var myFather = new Person("John", "Doe", 50, "blue");
+		var myMother = new Person("Sally", "Rally", 48, "green");
+		// console.log(myFather);
+		// console.log(myMother);
+
+		document.getElementById("demo").innerHTML =
+		"My father is " + myFather.nationality + ". My mother is " + myMother.nationality; 
+	</script>
+</body>
+</html>

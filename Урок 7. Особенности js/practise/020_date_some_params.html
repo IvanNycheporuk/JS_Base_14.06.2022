@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>new Date with different params</title>
+	<!-- JavaScript хранит даты как количество миллисекунд с 01 января 1970 года, 00:00:00 UTC (Universal Time Coordinated). 
+		 Нулевое время - 01 января 1970 00:00:00 UTC
+	-->
+</head>
+<body>
+	<h2>JavaScript new Date()</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+	
+		// 	6 параметров указывают год, месяц, день, час, минуты и секунды:
+		// var d = new Date(2018, 11, 24, 10, 33, 30);
+
+		// 5 параметров указывают год, месяц, день, час и минуту:
+		// var d = new Date(2018, 11, 24, 10, 33);
+
+		// 4 параметра указывают год, месяц, день и час: 
+		// var d = new Date(2018, 11, 24, 10);
+
+		// 3 параметра указывают год, месяц и день:
+		// var d = new Date(2018, 11, 24);
+
+		// 2 параметра указывают год и месяц:
+		// var d = new Date(2018, 11);
+
+		// Вы не можете пропустить месяц. Если вы укажете только один параметр, он будет обрабатываться как миллисекунды.
+		var d = new Date(2018);
+
+
+		document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+</html>

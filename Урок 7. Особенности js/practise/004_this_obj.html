@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this в переменной</title>
+</head>
+<body>
+	<h2>The JavaScript <b>this</b> Keyword</h2>
+
+
+	<p id="demo"></p> 
+<!-- При использовании в переменной «владелец» является глобальным объектом, поэтому this относится к объекту Global. -->
+		<script type="text/javascript">			
+			var x = this;
+			document.getElementById("demo").innerHTML = x;
+			console.log(x);
+
+		
+		</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Типы объектов (экземпляр) (классы)</title>
+</head>
+<body>
+
+	<h2>JavaScript Object Constructors</h2>
+
+	<p id="demo"></p>
+
+	<script>
+
+		// Иногда нам нужен «экземпляр» для создания разных объектов одного и того же типа.
+		// Объекты того же типа создаются путем вызова функции-конструктора с ключевым словом new:
+
+		function Person(first, last, age, eye) {
+		    this.firstName = first;
+		    this.lastName = last;
+		    this.age = age;
+		    this.eyeColor = eye;
+		}
+		
+		var myFather = new Person("John", "Doe", 50, "blue");
+		var myMother = new Person("Sally", "Rally", 48, "green");
+
+		document.getElementById("demo").innerHTML =
+		"My father name is " + myFather.firstName + " Last name is " + myFather.lastName + " and his age: " + myFather.age + ". My mother name is " + myMother.firstName + "Last name is " + myMother.lastName + " and her age: " + myMother.age + "."; 
+
+	</script>
+	
+</body>
+</html>

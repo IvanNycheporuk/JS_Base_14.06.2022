@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this в Event Handlers</title>
+</head>
+<body>
+		 
+		<!-- В обработчиках событий HTML this относится к элементу HTML, который получил событие: -->
+		
+		<button id="btn">Click to Remove Me!</button>
+
+		<script>
+
+			var btn = document.getElementById('btn');
+
+			btn.addEventListener('click', clickHandler)
+
+			function clickHandler(event) {
+				//akert
+				console.log('this', this);
+				console.log('event.target', event.target);
+				this.style.display = 'none';
+			}
+
+		</script>
+
+		<!-- 
+			1. onlclick inline
+			2. btn.onclikc
+			3. addEventListener()
+		 -->
+
+	
+</body>
+</html>

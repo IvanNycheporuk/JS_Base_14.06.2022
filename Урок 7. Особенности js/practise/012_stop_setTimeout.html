@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clearTimeout() </title>
+	<!-- Метод clearTimeout () останавливает выполнение функции, указанной в setTimeout (). -->
+</head>
+<body>
+	<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+	<p>Click "Stop" to prevent the first function to execute.</p>
+	<p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+	<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+	<button onclick="clearTimeout(myVar)">Stop it</button>
+	<!-- Метод clearTimeout () использует переменную, возвращаемую из setTimeout () -->
+	<script>
+		function myFunction() {
+		    alert("Hello");
+		}
+	</script>
+</body>
+</html>

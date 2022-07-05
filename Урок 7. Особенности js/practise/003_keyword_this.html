@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What is this?</title>
+	<!-- JavaScript this ключевое слово относится к объекту, к которому он принадлежит. -->
+</head>
+<body>
+	<h2>The JavaScript <b>this</b> Keyword</h2>
+
+
+	<p id="demo"></p>
+
+	<script>
+		// this в методе объекта 
+		// В методе объекта  this относится к «владельцу» метода.
+		
+		var person = {
+		    firstName: "John",
+		    lastName : "Doe",
+		    id       : 5566,
+		    fullName : function() {
+		       return this.firstName + " " + this.lastName;
+		    }
+		};
+
+
+		document.getElementById("demo").innerHTML = person.fullName();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Window Location</title>
+	<!-- 
+		window.location.href возвращает href (URL) текущей страницы
+		window.location.hostname возвращает доменное имя веб-хоста
+		window.location.pathname возвращает путь и имя файла текущей страницы
+		window.location.protocol возвращает используемый веб-протокол (http: или https :)
+		window.location.assign загружает новый документ
+ -->
+</head>
+<body>
+	<p id="demo"></p>
+	<input type="button" value="Load new document" onclick="newDoc()">
+
+	<script>
+		document.getElementById("demo").innerHTML = 
+			"The full URL of this page is:<br>" + window.location.href + "</br>" +
+			"Page hostname is: " + window.location.hostname + "</br>" +
+			"Page path is: " + window.location.pathname + "</br>" +
+			"The page protocol is: " + window.location.protocol + "</br>" +
+			"Port number is " + window.location.port + "</br>";	
+
+		function newDoc() {
+		    window.location.assign("https://google.com");
+		}
+		// Большинство браузеров не будут отображать номера портов по умолчанию (80 для http и 443 для https)
+	</script>
+</body>
+</html>

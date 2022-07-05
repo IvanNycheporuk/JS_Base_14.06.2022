@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objects</title>
+	<!-- In JavaScript, objects are king. If you understand objects, you understand JavaScript. -->
+</head>
+<body>
+	<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+// var person = {
+//     firstName : "John",
+//     lastName  : "Doe",
+//     age       : 50,
+//     eyeColor  : "blue"
+// };
+
+// document.getElementById("demo").innerHTML =
+// person.firstName + " " + person.lastName;
+
+
+// Using the JavaScript Keyword new
+
+	var person = new Object();
+		person.firstName = "John";
+		person.lastName = "Doe";
+		person.age = 50;
+		person.eyeColor = "blue"; 
+
+	document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+</script>
+</body>
+</html>

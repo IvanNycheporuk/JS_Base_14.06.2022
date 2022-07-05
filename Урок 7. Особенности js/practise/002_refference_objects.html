@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<title>Objects</title>
+<!-- Объекты изменяемы: они адресуются по ссылке, а не по значению.
+Любые изменения в x также изменят person, так как x и person являются одним и тем же объектом.
+ -->
+<body>
+
+	<p>JavaScript objects are mutable.</p>
+	<p>Any changes to a copy of an object will also change the original.</p>
+
+	<p id="demo"></p>
+
+	<script>
+		var person = {
+			firstName:"John", 
+			lastName:"Doe", 
+			age:50, 
+			eyeColor:"blue"
+		}		
+
+		var x = person;
+
+		// var x = {
+		// 	firstName:"John", 
+		// 	lastName:"Doe", 
+		// 	age:50,
+		// 	eyeColor:"blue"
+		// }
+		
+		//var x = person;
+
+		//x.age = 10;
+
+		// console.log('x', x);
+		// console.log('person', person);
+
+
+		// console.log('x.age ' + x.age, 'person.age ' + person.age);
+
+		//console.log('x === person', x === person);
+
+		// document.getElementById("demo").innerHTML =
+		// person.firstName + " is " + person.age + " years old.";
+
+		// Примечание: переменные JavaScript не изменяются. Только объекты JavaScript.
+	</script>
+
+</body>
+</html>

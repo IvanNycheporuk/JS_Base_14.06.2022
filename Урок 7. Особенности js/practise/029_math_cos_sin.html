@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Math.sin() and Math.cos()</title>
+	<!-- Угол в радианах = (угол в градусах) * PI / 180. -->
+</head>
+<body>
+
+	<h2>JavaScript Math.sin() and Math.cos()</h2>
+	<p id="demo"></p>
+
+	<script>
+		// Math.sin (x) возвращает синус x (заданный в радианах):		
+		document.getElementById("demo").innerHTML = "The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+
+		// Math.cos (x) возвращает косинус x (заданный в радианах):
+		document.getElementById("demo").innerHTML = "The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+	</script>
+</body>
+</html>
